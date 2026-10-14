@@ -6,6 +6,8 @@ This is a continuous, real capture of the **0.16.1 main frontend** on 14 October
 
 **What is demonstrated:** Reading continuity, navigation to a pre-seeded decision, explicit save through the existing browser gateway, return to the original article and persistence across a page reload. Article evidence and the waiting condition were prepared before capture. New evidence attachment, paid AI responses and native database writes are outside this demo.
 
+**Development context:** PCC was developed with contributions from Claude Code and Codex. This walkthrough was prepared with Codex assistance from the existing frontend. It documents the rendered UI and browser-local storage behavior; the capture itself makes no AI-provider calls.
+
 ## 1. Review one source-backed update
 
 The fictional note says that dimensions are known, but reading comfort remains unverified.

@@ -1,6 +1,6 @@
 # Ethan · Tools for a clear next step
 
-My background is hospitality partnerships and TravelTech operations in Japan. I turn everyday friction into tools I can use and inspect, own product direction and acceptance, and collaborate with Codex on implementation.
+My background is hospitality partnerships and TravelTech operations in Japan. I turn everyday friction into tools I can use and inspect, own product direction and acceptance, and work with Claude Code and Codex on implementation and review.
 
 **Start with Personal Command Center.** In the walkthrough, two monitor candidates have known dimensions but unverified reading comfort. I read the source, keep the decision in context, and explicitly save “wait for a hands-on comparison.” The same record survives a page reload.
 
@@ -10,13 +10,13 @@ My background is hospitality partnerships and TravelTech operations in Japan. I 
 
 ![PCC reading a synthetic monitor comparison](assets/pcc-02-read.png)
 
-*Actual PCC 0.16.1 frontend, isolated browser QA, synthetic data. The screenshots are real captures; this is not an installed-native or AI-provider demonstration.*
+*Actual PCC 0.16.1 frontend, isolated browser QA, synthetic data. Article evidence and waiting conditions were pre-seeded; saving here uses browser localStorage. Native SQLite writes and AI-provider calls are outside this demonstration.*
 
 ## Personal Command Center · flagship
 
 **Problem:** Information, reading and decisions are easy to separate into different tools, losing the source and the next action.
 
-**My contribution:** I shaped the reading-and-decision workflow, cache continuity and explicit save boundary, then worked with Codex on implementation and installed-app acceptance.
+**My contribution:** I shaped the reading-and-decision workflow, cache continuity and explicit save boundary. I worked with Claude Code and Codex across prototyping, UI and feature development, debugging and review, and own the acceptance decisions. Private development history includes Claude-attributed readability and native-shell changes.
 
 **Implementation:** React/TypeScript, Tauri/Rust and SQLite in the desktop product. The walkthrough uses the existing browser QA gateway from the same 0.16.1 main revision.
 
@@ -28,7 +28,7 @@ My background is hospitality partnerships and TravelTech operations in Japan. I 
 
 **Problem:** AI context can become ambiguous about permission, which source is current, and whether a read changes the underlying account.
 
-**My contribution:** I defined account and authority boundaries, worked with Codex on implementation, and separated deployed code identity from source identity.
+**My contribution:** I defined account and authority boundaries and worked with Claude Code and Codex on prototypes, implementation, debugging and review. Recorded Claude contributions include retrieval-only boundaries and bounded content handling. I kept deployed code identity separate from source identity.
 
 **Implementation:** TypeScript, a stateless MCP service on Cloudflare Workers, owner OAuth, SHA-pinned source reads and a bounded read-only IMAP adapter.
 
@@ -44,7 +44,7 @@ My background is hospitality partnerships and TravelTech operations in Japan. I 
 
 **Problem:** Captured race context and recommendations need to stay readable in one focused Windows surface.
 
-**My contribution:** I shaped the focused overlay, recovery behavior and acceptance of the full F10-to-result path, collaborating with Codex on implementation and packaging.
+**My contribution:** I shaped the focused overlay, recovery behavior and acceptance of the full F10-to-result path, working with Claude Code and Codex on implementation and debugging. Recorded Claude contributions include overlay interaction and window-order fixes.
 
 **Implementation:** Python/Tk, local visual recognition and a recommendation policy.
 
@@ -62,4 +62,4 @@ My background is hospitality partnerships and TravelTech operations in Japan. I 
 
 It is an independent teaching example, not extracted product code. It does not prove PCC behavior, MCP authorization safety or recognition performance.
 
-**Authorship and scope:** These existing projects are presented as work developed with Codex assistance, not Claude or Claude Code builds. Full product repositories and operational records remain private. See [visual sources and reuse scope](ASSETS.md).
+**Development and responsibility:** Claude Code and Codex contributed at different stages of these products. I defined the requirements, reviewed the results and decided what was ready to use. [Development attribution and acceptance limits](EVIDENCE.md) distinguish my account of that collaboration from recorded examples. Full product repositories and operational records remain private. See [visual sources and reuse scope](ASSETS.md).
