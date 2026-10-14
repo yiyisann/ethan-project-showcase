@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc"><title id="title">Context with explicit access boundaries</title><desc id="desc">ORIGINAL ARCHITECTURE SCHEMATIC / NOT A LIVE CLIENT CAPTURE. A simplified architecture, with permission and provenance kept visible.</desc>
+<rect width="1200" height="600" fill="#101419"/>
+<text x="44" y="54" fill="#80d3cc" font-family="sans-serif" font-size="13" letter-spacing="1">ORIGINAL ARCHITECTURE SCHEMATIC / NOT A LIVE CLIENT CAPTURE</text>
+<text x="44" y="105" fill="#e6edf3" font-family="sans-serif" font-size="32" font-weight="600">Context with explicit access boundaries</text>
+<text x="44" y="145" fill="#aab7c4" font-family="sans-serif" font-size="16">A simplified architecture, with permission and provenance kept visible.</text>
+<rect x="44" y="220" width="344" height="208" fill="#172028" stroke="#34404a"/>
+<text x="66" y="258" fill="#80d3cc" font-family="sans-serif" font-size="13">01</text>
+<text x="66" y="306" fill="#e6edf3" font-family="sans-serif" font-size="28" font-weight="600">Permission</text>
+<text x="66" y="350" fill="#e6edf3" font-family="sans-serif" font-size="17">Owner OAuth</text>
+<text x="66" y="384" fill="#aab7c4" font-family="sans-serif" font-size="16">Explicitly scoped reads</text>
+<path d="M 395 322 h 25 m -7 -6 l 7 6 -7 6" fill="none" stroke="#80d3cc" stroke-width="2"/>
+<rect x="428" y="220" width="344" height="208" fill="#172028" stroke="#34404a"/>
+<text x="450" y="258" fill="#80d3cc" font-family="sans-serif" font-size="13">02</text>
+<text x="450" y="306" fill="#e6edf3" font-family="sans-serif" font-size="28" font-weight="600">Read</text>
+<text x="450" y="350" fill="#e6edf3" font-family="sans-serif" font-size="17">Stateless MCP boundary</text>
+<text x="450" y="384" fill="#aab7c4" font-family="sans-serif" font-size="16">Pin each source read to a SHA</text>
+<path d="M 779 322 h 25 m -7 -6 l 7 6 -7 6" fill="none" stroke="#80d3cc" stroke-width="2"/>
+<rect x="812" y="220" width="344" height="208" fill="#172028" stroke="#34404a"/>
+<text x="834" y="258" fill="#80d3cc" font-family="sans-serif" font-size="13">03</text>
+<text x="834" y="306" fill="#e6edf3" font-family="sans-serif" font-size="28" font-weight="600">Return</text>
+<text x="834" y="350" fill="#e6edf3" font-family="sans-serif" font-size="17">Project guidance or mail</text>
+<text x="834" y="384" fill="#aab7c4" font-family="sans-serif" font-size="16">Bounded output; no write path</text>
+<path d="M44 487 H1156" stroke="#34404a"/><text x="44" y="526" fill="#aab7c4" font-family="sans-serif" font-size="15">Single-sample production acceptance is a separate dated observation, not this diagram.</text><text x="44" y="565" fill="#aab7c4" font-family="sans-serif" font-size="12">Original vector created for this portfolio. All text is explanatory; no third-party image or font file embedded.</text></svg>
