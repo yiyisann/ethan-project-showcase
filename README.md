@@ -2,11 +2,13 @@
 
 My background is hospitality partnerships and TravelTech operations in Japan. I turn everyday friction into tools I can use and inspect, own product direction and acceptance, and work with Claude Code and Codex on implementation and review.
 
-**Start with Personal Command Center.** In the walkthrough, two monitor candidates have known dimensions but unverified reading comfort. I read the source, keep the decision in context, and explicitly save “wait for a hands-on comparison.” The same record survives a page reload.
+**Start with Personal Command Center:** keep a source, its uncertainty and an explicit next step together. **Updated 27 October 2026:** PCC 0.17.0 has completed formal installed-app acceptance on Mac and Windows, preserving existing data and settings.
 
 [Portfolio](https://ethan-wei-portfolio.ethanwei77.chatgpt.site) · [LinkedIn](https://www.linkedin.com/in/ethan-w-43a111238/)
 
-[Two-minute PCC walkthrough](DEMO.md) · [Evidence and limits](EVIDENCE.md) · [Runnable cache example](https://github.com/yiyisann/evidence-cache-demo)
+[Historical 0.16.1 browser walkthrough](DEMO.md) · [Evidence and limits](EVIDENCE.md) · [Runnable cache example](https://github.com/yiyisann/evidence-cache-demo)
+
+The viewable walkthrough below is the **historical 0.16.1 browser flow**: read a synthetic monitor comparison, explicitly save a waiting action, and return after a page reload. A new 0.17.0 native recording is not provided; [EVIDENCE](EVIDENCE.md) separates current acceptance from this historical capture and its limits.
 
 ![PCC reading a synthetic monitor comparison](assets/pcc-02-read.png)
 
@@ -18,11 +20,11 @@ My background is hospitality partnerships and TravelTech operations in Japan. I 
 
 **My contribution:** I shaped the reading-and-decision workflow, cache continuity and explicit save boundary. I worked with Claude Code and Codex across prototyping, UI and feature development, debugging and review, and own the acceptance decisions. Private development history includes Claude-attributed readability and native-shell changes.
 
-**Implementation:** React/TypeScript, Tauri/Rust and SQLite in the desktop product. The walkthrough uses the existing browser QA gateway from the same 0.16.1 main revision.
+**Implementation:** React/TypeScript, Tauri/Rust and SQLite in the desktop product. The current 0.17.0 release adds a Decisions Workbench with structured context and question-level images. The viewable walkthrough uses the existing browser QA gateway from the historical 0.16.1 main revision.
 
-**Result:** The real walkthrough shows reading → saved decision context → an explicit waiting action → return to the same article → persistence after reload. Reading alone creates no saved event. Separate installation records cover Mac 0.16.1 source, signature and bundle parity.
+**Result:** The 0.17.0 release record confirms Mac and Windows formal installed-app acceptance at the same product revision, including preservation of existing data and settings. Separate synthetic native acceptance records cover explicit save and restart persistence. The historical browser walkthrough shows reading → saved decision context → an explicit waiting action → return to the same article → persistence after reload. Reading alone creates no saved event.
 
-**Key limit:** Browser QA persistence does not verify native SQLite writes or new evidence attachment. Article evidence and a specific waiting condition were seeded before the walkthrough. Human voice accuracy, the current Windows release and trusted public distribution remain unqualified.
+**Key limit:** Decisions paid Live API behavior remains unverified. [Evidence and acceptance limits](EVIDENCE.md) detail capture, platform and distribution coverage.
 
 ## Personal AI Control Plane · supporting project
 
@@ -32,9 +34,9 @@ My background is hospitality partnerships and TravelTech operations in Japan. I 
 
 **Implementation:** TypeScript, a stateless MCP service on Cloudflare Workers, owner OAuth, SHA-pinned source reads and a bounded read-only IMAP adapter.
 
-**Result:** Production 1.0.0 was confirmed on 14 October 2026; list, search and message reads succeeded. One naturally unread message stayed unread through list → body read → list.
+**Result:** The dated production record for **1.1.0, 21 October 2026 (Japan time)** confirms scoped PCC source access, bounded mail reads and continuation to older results. A source outside the approved repository set was rejected. The deployment is tied to its implementation revision; the later documentation HEAD is a separate identity.
 
-**Key limit:** Japanese subject search can miss matches; HTML-only messages may not yield plain text. The unread check is one sample, and its private production evidence is not publicly reproducible.
+**Key limit:** HTML-to-text fallback has local validation but no live HTML-only sample. One bounded Japanese-subject query succeeded; general Unicode matching remains unproven. The 1.1 run had no naturally unread sample, so the earlier one-message unread check remains historical. Natural 24-hour OAuth refresh and fresh ChatGPT/Windows/Linux client acceptance were not revalidated. Private production evidence is not publicly reproducible.
 
 ![Original schematic of scoped MCP access](assets/mcp-boundaries.svg)
 
@@ -48,9 +50,9 @@ My background is hospitality partnerships and TravelTech operations in Japan. I 
 
 **Implementation:** Python/Tk, local visual recognition and a recommendation policy.
 
-**Result:** Source and packaged builds each completed 16/16 cases in a physical screenshot-fixture replay. Recorded F10 P95: 223.0 ms source / 260.2 ms packaged.
+**Result:** Source and packaged builds completed the recorded physical screenshot-fixture replay, exercising the F10-to-result path.
 
-**Key limit:** These measurements are fixture replay, not natural live gameplay or a final installed-runtime benchmark. Raw per-case inputs and outputs are not published.
+**Key limit:** This is fixture replay, not natural live gameplay or a final installed-runtime benchmark. Raw per-case inputs and outputs are not published.
 
 ![Original recognition pipeline schematic](assets/game-recognition-pipeline.svg)
 
@@ -61,5 +63,9 @@ My background is hospitality partnerships and TravelTech operations in Japan. I 
 [Evidence-cache demo](https://github.com/yiyisann/evidence-cache-demo) illustrates one rule: a failed refresh preserves the last useful fact and its observation time, while visibly marking it stale. Node.js 22+, no dependencies or network; run `node demo.mjs` and `node --test cache.test.mjs`.
 
 It is an independent teaching example, not extracted product code. It does not prove PCC behavior, MCP authorization safety or recognition performance.
+
+## Hospitality experience and the proposed competition direction
+
+My hotel-partnerships experience makes visit preparation a useful next problem: assemble public hotel facts into a short brief with source links, flag conflicts and gaps, and turn them into questions to confirm during the visit. This is the direction I **plan to explore during Built with Claude Japan 2026**, not a completed product. PCC and the supporting projects are prior work, not work claimed to have been built during the competition. The proposed brief would use public sources only; no employer or customer confidential materials are included here. No selection outcome, adoption or time saving is claimed.
 
 **Development and responsibility:** Claude Code and Codex contributed at different stages of these products. I defined the requirements, reviewed the results and decided what was ready to use. [Development attribution and acceptance limits](EVIDENCE.md) distinguish my account of that collaboration from recorded examples. Full product repositories and operational records remain private. See [visual sources and reuse scope](ASSETS.md).
